@@ -1,4 +1,4 @@
-package com.company;
+package com.company.thirtydaychallenge;
 
 import java.util.HashSet;
 
