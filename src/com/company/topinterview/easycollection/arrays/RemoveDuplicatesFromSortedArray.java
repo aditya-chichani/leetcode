@@ -1,4 +1,4 @@
-package com.company.topinterview.easycollection;
+package com.company.topinterview.easycollection.arrays;
 
 public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
