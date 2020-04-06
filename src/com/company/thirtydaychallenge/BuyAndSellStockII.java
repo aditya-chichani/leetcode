@@ -1,5 +1,6 @@
 package com.company.thirtydaychallenge;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class BuyAndSellStockII {
