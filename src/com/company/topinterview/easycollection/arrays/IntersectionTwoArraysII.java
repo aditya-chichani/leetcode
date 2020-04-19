@@ -1,6 +1,5 @@
 package com.company.topinterview.easycollection.arrays;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class IntersectionTwoArraysII {
