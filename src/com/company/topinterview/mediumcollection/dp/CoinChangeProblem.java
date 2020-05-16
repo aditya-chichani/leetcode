@@ -8,6 +8,7 @@ public class CoinChangeProblem {
     static int min;
     static Map<Integer, Integer> coinChangeMap;
 
+    // DP soln is incomplete
     public static int coinChangeUsingDP(int[] coins, int amount) {
         int n = coins.length;
         min = -1;
