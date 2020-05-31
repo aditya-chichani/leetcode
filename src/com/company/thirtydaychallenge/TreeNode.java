@@ -57,4 +57,9 @@ public class TreeNode {
         }
         return root;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.val);
+    }
 }
