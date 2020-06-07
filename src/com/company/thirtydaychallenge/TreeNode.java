@@ -14,6 +14,25 @@ public class TreeNode {
         val = x;
     }
 
+    public static TreeNode generateBST(String s) {
+        s = s.replace("[", "").replace("]", "").replace("{", "").replace("}", "");
+        String[] split = s.split(",");
+        List<Integer> nums = new ArrayList<>();
+        for (String x : split)
+            nums.add(Integer.parseInt(x));
+        return sortedArrayListToBST(nums, 0, nums.size() - 1);
+    }
+
+    private static TreeNode sortedArrayListToBST(List<Integer> nums, int start, int end) {
+        if (start > end)
+            return null;
+        int mid = start + ((end - start) >> 1);
+        TreeNode curr = new TreeNode(nums.get(mid));
+        curr.left = sortedArrayListToBST(nums, start, mid - 1);
+        curr.right = sortedArrayListToBST(nums, mid + 1, end);
+        return curr;
+    }
+
     public static TreeNode generateTree(String s) {
         s = s.replace("[", "");
         s = s.replace("]", "");
