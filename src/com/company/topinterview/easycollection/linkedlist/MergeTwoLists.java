@@ -37,4 +37,31 @@ public class MergeTwoLists {
 
         return head.next;
     }
+
+
+    static ListNode mergeLists(ListNode head1, ListNode head2) {
+        ListNode curr1 = head1, curr2 = head2;
+        ListNode head = new ListNode();
+        ListNode curr = head;
+        while (curr1 != null && curr2 != null) {
+            if (curr1.val < curr2.val) {
+                curr.next = curr1;
+                curr1 = curr1.next;
+                curr = curr.next;
+                curr.next = null;
+            } else {
+                curr.next = curr2;
+                curr2 = curr2.next;
+                curr = curr.next;
+                curr.next = null;
+            }
+        }
+        if (curr1 != null) {
+            curr.next = curr1;
+        }
+        if (curr2 != null) {
+            curr.next = curr2;
+        }
+        return head.next;
+    }
 }

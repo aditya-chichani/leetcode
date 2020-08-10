@@ -6,6 +6,9 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i + "  " + Math.log((double) i / 10.0f));
+        }
 
         Set<String> set = new HashSet<>();
         ArrayList<String> strings = new ArrayList<>(set);

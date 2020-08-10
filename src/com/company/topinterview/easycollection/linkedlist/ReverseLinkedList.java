@@ -8,7 +8,6 @@ public class ReverseLinkedList {
             nHead = head;
             return head;
         }
-
         reverseListHelper(head.next).next = head;
         head.next = null;
         return head;
