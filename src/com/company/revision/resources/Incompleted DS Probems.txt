@@ -34,17 +34,7 @@ Search an element in a sorted rotated array
 Find the maximum value of a[j]-a[i]+a[l]-a[k], for every four indices i, j, k, l such that i< j < k < l.
 
 
-
-Stack
-Algorithm to find the celebrity in minimum number of questions in a party.
-Algorithm to merge overlapping intervals
-Find the largest rectangular area possible in a given histogram.
-Given an integer array of size 'n', find the maximum of the minimum’s of every window size in the array.
-Calculate minimum number of bracket reversals needed to make an expression balenced.
-Design a stack, to find getmin() in O(1) time and O(1) space complexity.
-Find if an expression has recursive duplicates or not.
-
-
+4.2 Stack
 
 
 4.3 Queues
